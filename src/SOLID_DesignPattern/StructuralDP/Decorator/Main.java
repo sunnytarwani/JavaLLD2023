@@ -6,7 +6,7 @@ public class Main {
 
         IceCream iceCream = new ButterScotchIceCream();
         iceCream = new ChocolateSprinkle(new RedVelvetSyrup(iceCream));
-
         System.out.println("desc : " + iceCream.getDescription() + " \n cost : " + iceCream.cost());
+
     }
 }

@@ -1,4 +1,4 @@
 package Projects.TicTacToe.Exception;
 
-public class MoreThanOneBotException extends Throwable{
+public class MoreThanOneBotException extends Exception{
 }

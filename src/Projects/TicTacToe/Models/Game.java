@@ -4,7 +4,6 @@ import Projects.TicTacToe.Exception.DuplicateSymbolException;
 import Projects.TicTacToe.Exception.MoreThanOneBotException;
 import Projects.TicTacToe.Exception.PlayersMisMatchException;
 import Projects.TicTacToe.Strategies.WinningStrategy;
-import SOLID_DesignPattern.CreationalDP.BuilderDP.Burger;
 
 import java.util.*;
 
@@ -16,7 +15,6 @@ public class Game {
     private Player winner;
     private GameState gameState;
     private int nextPlayerIndex;
-
     private List<WinningStrategy> winningStrategies;
 
 
@@ -64,6 +62,32 @@ public class Game {
             }
         }
         return false;
+    }
+
+    public void undo() {
+        if(moves.size() == 0){
+            System.out.println("No moves to remove");
+            return;
+        }
+
+        Move lastMove = moves.get(moves.size() - 1);
+        moves.remove(lastMove);
+
+        Cell cell = lastMove.getCell();
+        cell.setCellState(CellState.EMPTY);
+        cell.setPlayer(null);
+
+
+        for(WinningStrategy winningStrategy : winningStrategies){
+            winningStrategy.undo(board , lastMove);
+        }
+
+        if(nextPlayerIndex != 0){
+            nextPlayerIndex--;
+        }
+        else{
+            nextPlayerIndex = players.size()-1;
+        }
     }
 
     public static class Builder{

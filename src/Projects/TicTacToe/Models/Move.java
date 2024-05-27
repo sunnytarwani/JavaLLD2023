@@ -25,4 +25,6 @@ public class Move {
     public void setPlayer(Player player) {
         this.player = player;
     }
+
+
 }

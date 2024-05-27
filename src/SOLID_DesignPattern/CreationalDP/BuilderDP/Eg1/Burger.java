@@ -1,4 +1,4 @@
-package SOLID_DesignPattern.CreationalDP.BuilderDP;
+package SOLID_DesignPattern.CreationalDP.BuilderDP.Eg1;
 
 public class Burger {
 

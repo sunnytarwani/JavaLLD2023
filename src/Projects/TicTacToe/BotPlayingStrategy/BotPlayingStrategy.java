@@ -9,5 +9,6 @@ public interface BotPlayingStrategy {
 }
 
 /*
-*
+*make should analyse the board
+* and make the move according for the bot
 * */

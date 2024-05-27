@@ -7,7 +7,6 @@ import java.util.List;
 public class NetworkConnection implements Cloneable {
     private String ip;
     private String importantData;
-
     private List<String> domains = new ArrayList<>();
 
     public List<String> getDomains() {

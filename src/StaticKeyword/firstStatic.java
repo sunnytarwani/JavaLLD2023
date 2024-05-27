@@ -39,13 +39,13 @@ public class firstStatic {
 
         Phone obj2 = new Phone();
         obj2.value = 250;
-        Phone.phoneName = "Iphone";
+        //Phone.phoneName = "Iphone";
         Phone.displayValues(obj2);
-        System.out.println("-------------------------");
-        Phone.displayValues(obj1);
+//        System.out.println("-------------------------");
+//        Phone.displayValues(obj1);
 
         Phone obj3 = new Phone();
-        Phone.phoneName = "Samsung";
+        //Phone.phoneName = "Samsung";
         Phone.displayValues(obj3);
     }
 }

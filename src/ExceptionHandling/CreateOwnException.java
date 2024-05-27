@@ -2,13 +2,12 @@ package ExceptionHandling;
 
 class SunnyException extends Exception{
     public SunnyException(String s){
-
     }
 }
 
 
 public class CreateOwnException {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws SunnyException {
 
         int i = 20;
         int j = 0;

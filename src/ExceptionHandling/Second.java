@@ -3,12 +3,12 @@ package ExceptionHandling;
 public class Second {
     public static void main(String[] args) {
 
-        int i = 20;
+        int i = 0;
         int j = 0;
 
         try{
             j = 18/i;
-            if(j == 0){
+            if(i == 0){
                 throw new ArithmeticException();
             }
         }
@@ -18,6 +18,9 @@ public class Second {
         }
         catch (Exception e){
             System.out.println("something went wrong");
+        }
+        finally {
+            System.out.println("We're just trying to check");
         }
 
 

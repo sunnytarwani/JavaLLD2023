@@ -59,4 +59,5 @@ public class Cell {
             System.out.print("| - |");
         }
     }
+
 }

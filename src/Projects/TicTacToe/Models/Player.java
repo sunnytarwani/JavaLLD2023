@@ -56,7 +56,7 @@ public class Player {
         int row = scanner.nextInt();
         int col = scanner.nextInt();
 
-        while (validateMove(row,col, board) == false){
+        while (validateMove(row,col,board) == false){
             System.out.println(this.name + " Invalid Move, please try again");
             System.out.println(this.name + " it's your turn again to make the correct move, enter the Row and Column");
             row = scanner.nextInt();

@@ -17,13 +17,15 @@ public class Client {
 
         for(int i = 1 ; i <= 100 ; i++){
             printNumbers pn = new printNumbers(i);
-            //Thread t = new Thread(pn);
-            //t.start();
+//            Thread t = new Thread(pn);
+//            t.start();
             es.execute(pn);
+            //es.submit(pn);
 
         }
 
         es.close();
+        //es.shutdown();
 
         //if we have 4 core CPU , the max threads we should assign is the number of cores we have.
         //this is good practice.

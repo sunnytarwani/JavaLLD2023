@@ -9,7 +9,7 @@ public class MergeSorter implements Callable<List<Integer>> {
     List<Integer> arrayToSort;
 
     public MergeSorter(List<Integer> arrayToSort){
-        this.arrayToSort = arrayToSort;
+           this.arrayToSort = arrayToSort;
     }
 
 

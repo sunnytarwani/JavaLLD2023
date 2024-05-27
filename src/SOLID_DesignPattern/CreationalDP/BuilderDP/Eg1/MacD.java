@@ -1,4 +1,6 @@
-package SOLID_DesignPattern.CreationalDP.BuilderDP;
+package SOLID_DesignPattern.CreationalDP.BuilderDP.Eg1;
+
+import SOLID_DesignPattern.CreationalDP.BuilderDP.Eg1.Burger;
 
 public class MacD {
     public static void main(String[] args) {

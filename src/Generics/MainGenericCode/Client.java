@@ -14,5 +14,9 @@ public class Client {
         System.out.println(pair2.getsecond());
         System.out.println();
 
+        System.out.println(pair3.getfirst());
+        System.out.println(pair3.getsecond());
+        System.out.println();
+
     }
 }
