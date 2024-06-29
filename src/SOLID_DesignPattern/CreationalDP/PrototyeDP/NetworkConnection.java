@@ -1,7 +1,6 @@
 package SOLID_DesignPattern.CreationalDP.PrototyeDP;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class NetworkConnection implements Cloneable {
